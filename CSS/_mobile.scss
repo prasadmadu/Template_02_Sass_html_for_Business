@@ -1,0 +1,38 @@
+@media screen and (max-width: 576px){
+  .verticalText{
+    height: auto;
+    span{
+      position: relative;
+      writing-mode: initial;
+      rotate: 0deg;
+      padding-top: 30px;
+    }
+  }
+  ul{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    
+  }
+  li{
+    opacity: 1;
+  }
+  .berger{
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    display: block;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+
+}

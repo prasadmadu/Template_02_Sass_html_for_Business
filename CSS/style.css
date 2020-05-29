@@ -1,11 +1,15 @@
 header {
   width: 100vw;
   height: 100vh;
+  height: 120vh;
 }
 
 .navRow {
   background: #1b1b1b;
   height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .navRow .logo a {
@@ -22,15 +26,20 @@ header {
 .navRow nav {
   width: 100%;
   padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navRow nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
@@ -109,5 +118,93 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -10;
+}
+
+.top {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.top .sectionOneTop {
+  height: 60vh;
+}
+
+.top .sectionOneTop .col-sm-3 {
+  height: 60vh;
+}
+
+.top .sectionOneTop .col-sm-3 .overflw {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -20vh;
+  height: 80vh;
+  width: 100%;
+  background: url(/Images/6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top .sectionOneTop .col-sm-6 {
+  height: 60vh;
+  background: #1b1b1b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 576px) {
+  .verticalText {
+    height: auto;
+  }
+  .verticalText span {
+    position: relative;
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+    rotate: 0deg;
+    padding-top: 30px;
+  }
+  ul {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background: #1b1b1b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40vw;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  li {
+    opacity: 1;
+  }
+  .berger {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    display: block;
+    cursor: pointer;
+    z-index: 20;
+  }
 }
 /*# sourceMappingURL=style.css.map */
