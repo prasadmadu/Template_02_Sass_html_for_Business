@@ -73,6 +73,9 @@ header{
     }
   }
 }
+.nav-active{
+  transform: translateX(0);
+}
 .berger{
   padding-top: 10px;
   display: none;
@@ -127,7 +130,7 @@ header{
         top: -20vh;
         height: 80vh;
         width: 100%;
-        background: url(../Images/6.png);
+        background: url(../Images/5.jpg);
         background-size: cover;
         background-repeat: no-repeat;
       }
