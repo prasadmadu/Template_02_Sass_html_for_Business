@@ -110,7 +110,7 @@ header{
   @include fullpage();
   @include absLTop();
   height: 120vh;
-  background: url(/Images/1.jpg);
+  background: url(Images/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -10;
@@ -127,7 +127,7 @@ header{
         top: -20vh;
         height: 80vh;
         width: 100%;
-        background: url(/Images/6.png);
+        background: url(Images/6.png);
         background-size: cover;
         background-repeat: no-repeat;
       }
