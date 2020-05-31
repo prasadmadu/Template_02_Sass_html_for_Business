@@ -135,6 +135,10 @@ header{
         background-repeat: no-repeat;
       }
     }
+    .col3Content{
+      @include flexCenter();
+      text-align: justify;
+    }
     .col-sm-6{
       height: 60vh;
       background: $primaryColor;
