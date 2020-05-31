@@ -199,6 +199,10 @@ header {
   background: #ecd503;
 }
 
+.top .sectionOneBottom {
+  height: 40vh;
+}
+
 @media screen and (max-width: 576px) {
   .verticalText {
     height: auto;
