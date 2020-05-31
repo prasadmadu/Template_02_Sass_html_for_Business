@@ -176,6 +176,27 @@ header {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #e7e3e3;
+}
+
+.top .sectionOneTop .col-sm-6 a {
+  height: 40px;
+  background: #d1bc00;
+  padding: 5px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #131313;
+  font-weight: bolder;
+  border: #ecd503;
+  cursor: pointer;
+}
+
+.top .sectionOneTop .col-sm-6 a:hover {
+  background: #ecd503;
 }
 
 @media screen and (max-width: 576px) {

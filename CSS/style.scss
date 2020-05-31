@@ -143,6 +143,22 @@ header{
       height: 60vh;
       background: $primaryColor;
       @include flexCenter();
+      flex-direction: column;
+      color: $textPrimary;
+      a{
+        height: 40px;
+        background: $secondaryColor;
+        padding: 5px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: $textSecondary;
+        font-weight: bolder;
+        border: $secondaryhover;
+        cursor: pointer;
+        &:hover{
+          background: $secondaryhover;
+        }
+      }
     }
   }
 }
