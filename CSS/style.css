@@ -124,6 +124,7 @@ header {
   background: url(../Images/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   z-index: -10;
 }
 
@@ -134,11 +135,11 @@ header {
 }
 
 .top .sectionOneTop {
-  height: 60vh;
+  min-height: 60vh;
 }
 
 .top .sectionOneTop .col-sm-3 {
-  height: 60vh;
+  min-height: 60vh;
 }
 
 .top .sectionOneTop .col-sm-3 .overflw {
@@ -146,7 +147,7 @@ header {
   top: 0;
   left: 0;
   top: -20vh;
-  height: 80vh;
+  min-height: 80vh;
   width: 100%;
   background: url(../Images/5.jpg);
   background-size: cover;
@@ -163,10 +164,11 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: justify;
+  background-color: white;
 }
 
 .top .sectionOneTop .col-sm-6 {
-  height: 60vh;
+  min-height: 60vh;
   background: #1b1b1b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,7 +205,7 @@ header {
   height: 40vh;
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .verticalText {
     height: auto;
   }
