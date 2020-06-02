@@ -183,28 +183,120 @@ header{
   }
 }
 .middle2Body{
-  @include fullpage();
   background: $textPrimary;
-  background-color: blue;
+  background-color: $textPrimary;
   position: relative;
   .one{
-    background-color: blueviolet;
+    background-color: $textPrimary;
+    position: relative;
     min-height: 40vh;
+    @include flexCenter();
+    text-align: center;
+    span{
+      font-size: 40px;
+      font-weight: bolder;
+    }
   }
   .two{
     min-height: 60vh;
-    background-color: cadetblue;
+    background-color: $textPrimary;
+    position: relative;
     .col-sm-2{
       @include flexCenter();
       margin-top: 20px;
       margin-bottom: 20px;
+      min-height: 60vh;
     }
   }
 }
 
-
-
-
-
+.i1, .i2, .i3, .i4, .i5{
+  position: absolute;
+  cursor: pointer;
+  width: 90%;
+  min-height: 80%;
+  min-height: 60vh;
+}
+.i1front, .i1back,
+.i2front, .i2back,
+.i3front, .i3back,
+.i4front, .i4back,
+.i5front, .i5back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+  @include flexCenter();
+  flex-direction: column;
+  padding: 20px 10px;
+  text-align: justify;
+  background: $primaryColor;
+  color: $textPrimary;
+}
+.i1front{
+  background: url(../Images/2.jpg);
+  background-size: cover;
+  background-position: center;
+  transform:  rotateY(0deg);
+}
+.i2front{
+  background: url(../Images/3.jpg);
+  background-size: cover;
+  background-position: center;
+  transform:  rotateY(0deg);
+}
+.i3front{
+  background: url(../Images/4.jpg);
+  background-size: cover;
+  background-position: center;
+  transform:  rotateY(0deg);
+}
+.i4front{
+  background: url(../Images/3.jpg);
+  background-size: cover;
+  background-position: center;
+  transform:  rotateY(0deg);
+}
+.i5front{
+  background: url(../Images/2.jpg);
+  background-size: cover;
+  background-position: center;
+  transform:  rotateY(0deg);
+}
+.i1back, .i2back, .i3back, .i4back, .i5back{
+  transform: rotateY(180deg);
+}
+.i1:hover .i1front{
+  transform:  rotateY(-180deg);
+}
+.i2:hover .i2front{
+  transform:  rotateY(-180deg);
+}
+.i3:hover .i3front{
+  transform:  rotateY(-180deg);
+}
+.i4:hover .i4front{
+  transform:  rotateY(-180deg);
+}
+.i5:hover .i5front{
+  transform:  rotateY(-180deg);
+}
+.i1:hover .i1back{
+  transform:  rotateY(0deg);
+}
+.i2:hover .i2back{
+  transform:  rotateY(0deg);
+}
+.i3:hover .i3back{
+  transform:  rotateY(0deg);
+}
+.i4:hover .i4back{
+  transform:  rotateY(0deg);
+}
+.i5:hover .i5back{
+  transform:  rotateY(0deg);
+}
 
 @import "./mobile";
