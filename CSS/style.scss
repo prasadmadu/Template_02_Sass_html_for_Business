@@ -121,7 +121,8 @@ header{
 }
 .top{
   @include fullpage();
-  background-color: white;
+  background-color: $textPrimary;
+  position: relative;
   .sectionOneTop{
     min-height: 60vh;
     .col-sm-3, .col-sm-4{
@@ -181,6 +182,33 @@ header{
     }
   }
 }
+.middle2Body{
+  @include fullpage();
+  background: $textPrimary;
+  background-color: blue;
+  position: relative;
+  .one{
+    background-color: blueviolet;
+    min-height: 40vh;
+  }
+  .two{
+    min-height: 60vh;
+    background-color: cadetblue;
+    .col-sm-2{
+      @include flexCenter();
+    }
+  }
+}
+.imgal{
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+
+
+
+
 
 
 

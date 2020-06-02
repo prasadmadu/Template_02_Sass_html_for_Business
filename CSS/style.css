@@ -131,7 +131,8 @@ header {
 .top {
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: #e7e3e3;
+  position: relative;
 }
 
 .top .sectionOneTop {
@@ -227,6 +228,44 @@ header {
 
 .top .sectionOneBottom .active i, .top .sectionOneBottom .col-sm-3:hover i {
   color: #e7e3e3;
+}
+
+.middle2Body {
+  width: 100vw;
+  height: 100vh;
+  background: #e7e3e3;
+  background-color: blue;
+  position: relative;
+}
+
+.middle2Body .one {
+  background-color: blueviolet;
+  min-height: 40vh;
+}
+
+.middle2Body .two {
+  min-height: 60vh;
+  background-color: cadetblue;
+}
+
+.middle2Body .two .col-sm-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.imgal {
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 576px) {
