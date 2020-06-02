@@ -124,7 +124,7 @@ header{
   background-color: white;
   .sectionOneTop{
     min-height: 60vh;
-    .col-sm-3{
+    .col-sm-3, .col-sm-4{
       min-height: 60vh;
       .overflw{
         @include absLTop();
@@ -141,7 +141,7 @@ header{
       text-align: justify;
       background-color: white;
     }
-    .col-sm-6{
+    .col-sm-5{
       min-height: 60vh;
       background: $primaryColor;
       @include flexCenter();
@@ -165,7 +165,20 @@ header{
   }
   .sectionOneBottom{
     height: 40vh;
-    
+    .col-sm-3{
+      @include flexCenter();
+      flex-direction: column;
+      text-align: justify;
+    }
+    .active{
+      background: $secondaryColor;
+      i{
+        color: $textPrimary;
+      }
+    }
+    .col-sm-3:hover{
+      @extend .active;
+    }
   }
 }
 

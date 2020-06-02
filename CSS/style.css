@@ -138,11 +138,11 @@ header {
   min-height: 60vh;
 }
 
-.top .sectionOneTop .col-sm-3 {
+.top .sectionOneTop .col-sm-3, .top .sectionOneTop .col-sm-4 {
   min-height: 60vh;
 }
 
-.top .sectionOneTop .col-sm-3 .overflw {
+.top .sectionOneTop .col-sm-3 .overflw, .top .sectionOneTop .col-sm-4 .overflw {
   position: absolute;
   top: 0;
   left: 0;
@@ -167,7 +167,7 @@ header {
   background-color: white;
 }
 
-.top .sectionOneTop .col-sm-6 {
+.top .sectionOneTop .col-sm-5 {
   min-height: 60vh;
   background: #1b1b1b;
   display: -webkit-box;
@@ -185,7 +185,7 @@ header {
   color: #e7e3e3;
 }
 
-.top .sectionOneTop .col-sm-6 a {
+.top .sectionOneTop .col-sm-5 a {
   height: 40px;
   background: #d1bc00;
   padding: 5px 30px;
@@ -197,12 +197,36 @@ header {
   cursor: pointer;
 }
 
-.top .sectionOneTop .col-sm-6 a:hover {
+.top .sectionOneTop .col-sm-5 a:hover {
   background: #ecd503;
 }
 
 .top .sectionOneBottom {
   height: 40vh;
+}
+
+.top .sectionOneBottom .col-sm-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+}
+
+.top .sectionOneBottom .active, .top .sectionOneBottom .col-sm-3:hover {
+  background: #d1bc00;
+}
+
+.top .sectionOneBottom .active i, .top .sectionOneBottom .col-sm-3:hover i {
+  color: #e7e3e3;
 }
 
 @media (max-width: 576px) {
