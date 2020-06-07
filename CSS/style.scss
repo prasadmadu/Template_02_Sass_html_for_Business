@@ -298,5 +298,17 @@ header{
 .i5:hover .i5back{
   transform:  rotateY(0deg);
 }
+footer{
+  @include fullpage();
+  @include flexCenter();
+  flex-direction: column;
+  background: $primaryColor;
+  color: $textPrimary;
+  a{
+    line-height: 40px;
+    text-decoration: none;
+    color: $textPrimary;
+  }
+}
 
 @import "./mobile";
