@@ -311,4 +311,39 @@ footer{
   }
 }
 
+.middle3Body{
+  @include fullpage();
+  background-color: $primaryColor;
+  .imgleft{
+    background: url(../Images/7.jpg);
+    width: auto;
+    height: 100vh;
+    padding: 10px 50px 10px 50px;
+    background-size: cover;
+  }
+  .right{
+    text-align: center;
+    align-items: center;
+    @include flexCenter();
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    h1{
+      color: $textPrimary;
+    }
+    h3{
+      color: $textPrimary;
+    }
+    a{
+      background-color: $secondaryColor;
+      color: $primaryColor;
+      border-color: $secondaryColor;
+      &:hover{
+        background-color: $secondaryhover;
+      }
+    }
+  }
+}
+
 @import "./mobile";
